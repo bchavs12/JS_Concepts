@@ -1,12 +1,9 @@
 /**
- * A imutabilidade de dados é um conceito importante em programação funcional e também é aplicado em algumas outras abordagens de programação. Refere-se à característica dos dados que não podem ser alterados após serem criados. 
- * Em vez de modificar os dados existentes, o programa cria novos dados com base nos dados originais, mantendo os dados originais inalterados.
-*/
-
-// Imutabilidade com arrays
-/*
+ Imutabilidade com arrays
+*/ 
 
 // Função para adicionar um novo item em um array imutável
+
 function addItem(array, value){
     return [...array, value];
 }
@@ -15,15 +12,14 @@ function addItem(array, value){
 const numerosImutaveis = [1, 2, 3];
 
 console.log(numerosImutaveis);
-console.log(addItem(numerosImutaveis, 5));
-console.log(addItem(numerosImutaveis, 10));
+console.log(addItem(numerosImutaveis, 4, 5, 6));
 console.log(numerosImutaveis.length);
-*/
 
-// Imutabilidade com Objectos
-
-// Função para criar um novo objeto imutável com propriedades adicionais
-function addPropriedade(obj, propriedade, valor) {
+/*
+    Imutabilidade com Objectos
+    
+    // Função para criar um novo objeto imutável com propriedades adicionais
+    function addPropriedade(obj, propriedade, valor) {
     return {
         ... obj,
         [propriedade]: valor
@@ -41,3 +37,4 @@ const Person2Clone = addPropriedade(Person2, "Programador", "Junior");
 
 console.log(pessoaComProfissao);
 console.log(Person2Clone);
+*/
